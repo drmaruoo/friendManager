@@ -1,0 +1,48 @@
+﻿@model friendManager.Models.Friend
+
+@{
+    ViewData["Title"] = "Add a friend";
+}
+
+<h2>Add a friend</h2>
+
+<h4>Friend</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstMeetDate" class="control-label">First meet date</label>
+                <input asp-for="FirstMeetDate" class="form-control" />
+                <span asp-validation-for="FirstMeetDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BiggestSecret" class="control-label">His/Her biggest secret</label>
+                <input asp-for="BiggestSecret" class="form-control" />
+                <span asp-validation-for="BiggestSecret" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Likeability" class="control-label">Likeability (in integers, like '10' or '-536,43')</label>
+                <input asp-for="Likeability" class="form-control" />
+                <span asp-validation-for="Likeability" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

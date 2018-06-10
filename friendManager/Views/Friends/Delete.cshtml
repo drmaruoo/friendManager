@@ -1,0 +1,45 @@
+﻿@model friendManager.Models.Friend
+
+@{
+    ViewData["Title"] = "Delete a friend";
+}
+
+<h2>Delete a friend</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Friend</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstMeetDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstMeetDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BiggestSecret)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BiggestSecret)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Likeability)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Likeability)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
