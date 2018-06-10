@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "friendManager", "friendManager\friendManager.csproj", "{8E15AF47-D1FC-473B-B5D6-E80A305793F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "friendManagerTests", "friendManagerTests\friendManagerTests.csproj", "{164A359B-D860-4822-A58D-421E950B2151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "friendManagerTests", "friendManagerTests\friendManagerTests.csproj", "{164A359B-D860-4822-A58D-421E950B2151}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8E15AF47-D1FC-473B-B5D6-E80A305793F8} = {8E15AF47-D1FC-473B-B5D6-E80A305793F8}
 	EndProjectSection
