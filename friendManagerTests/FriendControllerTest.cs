@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using friendManager.Controllers;
 using friendManager.Models;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
 
